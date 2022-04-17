@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(unmo3)
+project(unmo3 C)
+
+if(MINGW OR WIN32)
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mconsole -s")
+endif(MINGW OR WIN32)
 
 include_directories(source)
 set(SOURCES_UNMO3_FILE 
