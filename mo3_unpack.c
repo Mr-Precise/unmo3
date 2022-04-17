@@ -13,6 +13,7 @@
 #include<ctype.h>
 
 #include"mo3_unpack.h"
+#include"stddef.h"
 
 extern int debug;
 
